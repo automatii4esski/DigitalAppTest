@@ -1,8 +1,9 @@
 body {
-  font-family: 'Gilroy', serif;
+  font-family: 'Gilroy', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+  letter-spacing: 0.8;
   color: $text-color-primary;
 }
 
@@ -23,6 +24,27 @@ body {
   background: $ui-color-primary;
   color: $text-color-tertiary;
   padding: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      $ui-color-primary,
+      darken($ui-color-primary, 15%)
+    );
+    z-index: -1;
+  }
+
+  &:hover {
+    background: transparent;
+  }
 }
 
 .title {

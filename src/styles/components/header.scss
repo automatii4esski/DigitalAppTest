@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0 15px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.menu {
+  display: none;
+}
+
+.header__logo {
+  margin-left: 15px;
+}
+
+.menu-burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 26px;
+  height: 18px;
+  background: none;
+  border: none;
+}
+
+.menu-burger__line {
+  height: 3px;
+  background: $ui-color-secondary;
+}

@@ -1,0 +1,42 @@
+.home {
+  position: relative;
+  background: linear-gradient(0deg, rgba(#98c3e8, 0.2) 8.84%, #fff 31.12%);
+  z-index: 1;
+}
+
+.home__inner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home__title {
+  font-family: 'Galien', serif;
+  font-size: 64px;
+  line-height: 74px;
+  color: $title-color-primary;
+  letter-spacing: 2.56px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  max-width: 515px;
+}
+
+.home__description {
+  max-width: 425px;
+  margin-bottom: 70px;
+}
+
+.home__button {
+  min-width: 220px;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 5px 10px 20px 0px rgba(53, 110, 173, 0.2);
+}
+
+.home__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 50%;
+}
