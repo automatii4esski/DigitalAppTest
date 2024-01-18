@@ -14,6 +14,14 @@ module.exports = (env) => {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].[contenthash].js',
       clean: true,
+      assetModuleFilename: (pathData) => {
+        const filepath = path
+          .dirname(pathData.filename)
+          .split('/')
+          .slice(1)
+          .join('/');
+        return `${filepath}/[name].[ext]`;
+      },
     },
     devServer: isDev
       ? {
@@ -47,21 +55,12 @@ module.exports = (env) => {
           },
         },
         {
+          test: /\.(woff|woff2)$/i,
+          type: 'asset/resource',
+        },
+        {
           test: /\.(png|jpg|gif)$/i,
-          use: [
-            {
-              loader: 'file-loader',
-              options: {
-                limit: 8192,
-                name: '[name].[ext]',
-                outputPath: (url, resourcePath, context) => {
-                  const relativePath = path.relative(context, resourcePath);
-                  return relativePath.replace('src', '');
-                },
-              },
-            },
-          ],
-          type: 'javascript/auto',
+          type: 'asset/resource',
         },
       ],
     },
