@@ -1,5 +1,33 @@
 body {
-  font-family: 'Galien', serif;
-  font-weight: 700;
-  font-size: 64px;
+  font-family: 'Gilroy', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: $text-color-primary;
+}
+
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wide-container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  border-radius: $border-radius;
+  background: $ui-color-primary;
+  color: $text-color-tertiary;
+  padding: 15px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 1.8;
+  font-weight: 600;
 }
