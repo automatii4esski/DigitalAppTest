@@ -27,23 +27,10 @@ body {
   position: relative;
   overflow: hidden;
   transition: background 0.25s;
-
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(
-      $ui-color-primary,
-      darken($ui-color-primary, 15%)
-    );
-    z-index: -1;
-  }
+  letter-spacing: 0.64px;
 
   &:hover {
-    background: transparent;
+    background: darken($ui-color-primary, 15%);
   }
 }
 
