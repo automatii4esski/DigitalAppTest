@@ -36,7 +36,7 @@
 }
 
 .contact__text {
-  margin-right: 20px;
+  margin-right: 40px;
   max-width: 460px;
 }
 
@@ -53,4 +53,34 @@
 .contact__button {
   min-width: 220px;
   border: none;
+}
+
+@media (max-width: 800px) {
+  .contact__inner {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    background: $ui-color-primary;
+  }
+
+  .contact__content {
+    text-align: center;
+    display: block;
+    padding: 70px 0;
+  }
+
+  .contact__text {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .contact__ui-wrapper {
+    border-radius: 70px 70px 0 0;
+  }
 }

@@ -11,9 +11,9 @@
 }
 
 .clients__title {
-  margin-right: 20px;
+  margin-right: 40px;
   color: $title-color-secondary;
-  max-width: 225px;
+  flex: 0 0 225px;
 }
 
 .clients__description {
@@ -73,5 +73,34 @@
 
   &:hover {
     background: darken(#4e86bb, 15%);
+  }
+}
+
+@media (max-width: 1030px) {
+  .clients__title {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .clients {
+    border-radius: 50px 50px 0 0;
+    padding: 80px 0;
+  }
+
+  .clients__text {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .clients__title {
+    margin: 0 0 50px;
+  }
+
+  .clients__logos-item,
+  .clients__logos-link {
+    flex-basis: 50%;
+    min-height: 100px;
   }
 }

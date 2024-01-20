@@ -81,3 +81,21 @@
 .footer__copyright {
   color: $text-color-secondary;
 }
+
+@media (max-width: 800px) {
+  .footer__content {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 30px;
+    margin-bottom: 0;
+  }
+
+  .footer__links-column + .footer__links-column {
+    margin-left: 0;
+  }
+
+  .footer__links-column,
+  .footer__about-column {
+    margin: 0 0 50px;
+  }
+}

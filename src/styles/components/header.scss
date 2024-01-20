@@ -1,15 +1,17 @@
 .header {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  padding: 48px 0 15px;
   position: absolute;
+  z-index: 10;
   width: 100%;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 10;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px 0 15px;
 }
 
 .menu {

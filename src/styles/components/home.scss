@@ -41,3 +41,28 @@
   max-width: 50%;
   z-index: -1;
 }
+
+@media (max-width: 800px) {
+  .home__img {
+    display: none;
+  }
+
+  .home__content {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home__description {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home__title {
+    font-size: 46px;
+    line-height: 50px;
+  }
+}
