@@ -20,7 +20,7 @@ module.exports = (env) => {
           .split('/')
           .slice(1)
           .join('/');
-        return `${filepath}/[name].[ext]`;
+        return `${filepath}/[name][ext]`;
       },
     },
     devServer: isDev
@@ -59,7 +59,7 @@ module.exports = (env) => {
           type: 'asset/resource',
         },
         {
-          test: /\.(png|jpg|gif)$/i,
+          test: /\.(png|jpg|gif|svg|webp)$/i,
           type: 'asset/resource',
         },
       ],
