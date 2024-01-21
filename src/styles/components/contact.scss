@@ -64,6 +64,10 @@
 @media (max-width: 600px) {
   .contact {
     background: $ui-color-primary;
+
+    &::before {
+      width: 100%;
+    }
   }
 
   .contact__content {

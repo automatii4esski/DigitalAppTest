@@ -239,5 +239,46 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal-overlay">
+      <div class="modal-wrapper">
+        <button class="modal-wrapper__close-button" type="button"></button>
+        <div class="modal-message">
+          <h3 class="modal-message__title">SEND US MESSAGE</h3>
+          <form class="modal-message__form" action="post">
+            <label class="modal-message__label">
+              <h4 class="modal-message__element-title">Full Name</h4>
+              <input
+                class="modal-message__form-element"
+                name="fullname"
+                type="text"
+                placeholder="Your Name"
+              />
+            </label>
+            <label class="modal-message__label">
+              <h4 class="modal-message__element-title">Email</h4>
+              <input
+                class="modal-message__form-element"
+                name="email"
+                type="text"
+                placeholder="Your Email"
+              />
+            </label>
+            <label class="modal-message__label modal-message__label-textarea">
+              <h4 class="modal-message__element-title">Message</h4>
+              <textarea
+                class="modal-message__form-element modal-message__textarea"
+                name="message"
+                placeholder="Your Message"
+              ></textarea>
+            </label>
+
+            <button class="modal-message__submit button" type="submit">
+              SUBMIT
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
