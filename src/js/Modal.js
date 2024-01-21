@@ -1,3 +1,4 @@
+import { Form } from './Form';
 import { Overlay } from './Overlay';
 
 export class Modal {
@@ -22,5 +23,19 @@ export class Modal {
 
   hide() {
     this.element.classList.add(this.elementClass + '--hidden');
+  }
+}
+
+export class ModalForm extends Modal {
+  form;
+
+  constructor(elementClass, form) {
+    super(elementClass);
+    this.form = form;
+  }
+
+  hide() {
+    super.hide();
+    this.form.resetForm();
   }
 }

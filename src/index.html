@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afrianska</title>
   </head>
-  <body>
+  <body class="body">
     <header class="header">
       <div class="wide-container">
         <div class="header__inner">
@@ -243,17 +243,22 @@
     <div class="modal-overlay">
       <div class="modal-wrapper">
         <button class="modal-wrapper__close-button" type="button"></button>
-        <div class="modal-message">
+        <div class="modal-message modal">
           <h3 class="modal-message__title">SEND US MESSAGE</h3>
           <form class="modal-message__form" action="post">
             <label class="modal-message__label">
               <h4 class="modal-message__element-title">Full Name</h4>
               <input
                 class="modal-message__form-element"
-                name="fullname"
+                name="fullName"
                 type="text"
                 placeholder="Your Name"
               />
+              <p
+                data-error
+                data-for="fullName"
+                class="modal-message__error"
+              ></p>
             </label>
             <label class="modal-message__label">
               <h4 class="modal-message__element-title">Email</h4>
@@ -263,6 +268,7 @@
                 type="text"
                 placeholder="Your Email"
               />
+              <p data-error data-for="email" class="modal-message__error"></p>
             </label>
             <label class="modal-message__label modal-message__label-textarea">
               <h4 class="modal-message__element-title">Message</h4>
@@ -271,12 +277,21 @@
                 name="message"
                 placeholder="Your Message"
               ></textarea>
+              <p data-error data-for="message" class="modal-message__error"></p>
             </label>
 
             <button class="modal-message__submit button" type="submit">
               SUBMIT
             </button>
           </form>
+        </div>
+        <div class="modal-success modal-success--hidden modal">
+          <img
+            class="modal-success__img"
+            src="./assets/img/icons/success.svg"
+            alt="success-icon"
+          />
+          success!
         </div>
       </div>
     </div>
