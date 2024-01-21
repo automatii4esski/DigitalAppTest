@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -13,7 +14,6 @@
       sizes="16x16"
       href="./assets/img/favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="./assets/img/favicon/site.webmanifest" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Afrianska</title>
@@ -26,7 +26,11 @@
             <img class="logo__img" src="./assets/img/logo.svg" alt="logo" />
           </a>
 
-          <button class="header__menu-burger menu-burger" type="button">
+          <button
+            class="header__menu-burger menu-burger"
+            name="burger menu"
+            type="button"
+          >
             <div class="menu-burger__line"></div>
             <div class="menu-burger__line"></div>
             <div class="menu-burger__line"></div>
@@ -51,7 +55,13 @@
               tristique vulputate ultrices ut mauris tellus at. Posuere
               sollicitudin odio tellus elit.
             </p>
-            <a class="home__button button" href="#">See Our Project</a>
+            <button
+              type="button"
+              name="see projects button"
+              class="home__button button"
+            >
+              See Our Project
+            </button>
           </div>
         </div>
       </div>
@@ -148,7 +158,13 @@
               <div class="clients__logos-item">LOGO CLIENT 5</div>
               <div class="clients__logos-item">LOGO CLIENT 6</div>
               <div class="clients__logos-item">LOGO CLIENT 7</div>
-              <a href="#" class="clients__logos-link">More Client</a>
+              <button
+                type="button"
+                name="more clients button"
+                class="clients__logos-link"
+              >
+                More Client
+              </button>
             </div>
           </div>
         </div>
@@ -169,7 +185,13 @@
                     aliqua. Ut enim ad minim veniam.
                   </p>
                 </div>
-                <button class="contact__button button">Let’s Talk</button>
+                <button
+                  class="contact__button button"
+                  type="button"
+                  name="lets talk button"
+                >
+                  Let’s Talk
+                </button>
               </div>
             </div>
           </div>
@@ -256,7 +278,11 @@
 
     <div class="modal-overlay modal-overlay--hidden">
       <div class="modal-wrapper">
-        <button class="modal-wrapper__close-button" type="button"></button>
+        <button
+          class="modal-wrapper__close-button"
+          name="close modal button"
+          type="button"
+        ></button>
         <div class="modal-message modal-message--hidden modal">
           <h3 class="modal-message__title">SEND US MESSAGE</h3>
           <form class="modal-message__form" action="post">
@@ -294,7 +320,11 @@
               <p data-error data-for="message" class="modal-message__error"></p>
             </label>
 
-            <button class="modal-message__submit button" type="submit">
+            <button
+              class="modal-message__submit button"
+              name="submit form"
+              type="submit"
+            >
               SUBMIT
             </button>
           </form>
